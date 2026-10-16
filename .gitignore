@@ -216,3 +216,61 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Nirmaan AI - local environments and secrets
+.env/
+.env
+!.env.example
+.venv/
+venv/
+ml_env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Datasets and large data artifacts
+data/raw/
+data/processed/
+*.zip
+
+# Model checkpoints and generated experiment outputs
+*.pt
+*.onnx
+*.safetensors
+runs/*
+!runs/detect/
+runs/detect/*
+!runs/detect/runs/
+runs/detect/runs/*
+!runs/detect/runs/nirmaan/
+runs/detect/runs/nirmaan/*
+!runs/detect/runs/nirmaan/taco_yolo_finetune/
+runs/detect/runs/nirmaan/taco_yolo_finetune/*
+!runs/detect/runs/nirmaan/taco_yolo_finetune/weights/
+runs/detect/runs/nirmaan/taco_yolo_finetune/weights/*
+!runs/detect/runs/nirmaan/taco_yolo_finetune/weights/best.pt
+experiments/
+
+# Temporary investigation scripts and local review files
+check_labels_temp.py
+check_taco_mapping.py
+frontend_review.txt
+
+# Experimental classifier checkpoints; keep only the active model
+ai/models/efficientnetb0_baseline.keras
+ai/models/efficientnetb0_finetuned.keras
+ai/models/efficientnetb0_mixed.keras
+ai/models/efficientnetb0_robust.keras
+
+# Local backups
+*.bak
+*.backup
